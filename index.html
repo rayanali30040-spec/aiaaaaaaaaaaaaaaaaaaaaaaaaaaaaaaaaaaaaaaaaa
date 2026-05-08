@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>AI Cris</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+<h1 class="logo">AI CRIS 🤖</h1>
+<p class="sub">ذكاء اصطناعي عربي احترافي</p>
+
+<div class="menu">
+<button onclick="show('detect')">🔍 كشف الصور</button>
+<button onclick="show('code')">💻 توليد أكواد</button>
+<button onclick="show('ask')">💬 اسأل AI</button>
+<button onclick="show('about')">ℹ️ About</button>
+</div>
+
+<!-- كشف الصور -->
+<div id="detect" class="box">
+<h2>كشف الصور</h2>
+<button onclick="detectImage()">فحص الصورة</button>
+<p id="detectResult"></p>
+</div>
+
+<!-- الأكواد -->
+<div id="code" class="box hidden">
+<h2>مولد الأكواد</h2>
+<input id="lang" placeholder="لغة البرمجة">
+<textarea id="features" placeholder="مميزات الكود"></textarea>
+<button onclick="generateCode()">توليد</button>
+<pre id="codeResult"></pre>
+</div>
+
+<!-- الشات -->
+<div id="ask" class="box hidden">
+<h2>اسأل AI Cris</h2>
+<input id="question" placeholder="اكتب سؤالك">
+<button onclick="askAI()">إرسال</button>
+<p id="answer"></p>
+</div>
+
+<!-- About -->
+<div id="about" class="box hidden">
+
+<h2>About AI Cris</h2>
+
+<a href="https://discord.com" target="_blank">
+<button>💜 صانع الموقع</button>
+</a>
+
+<a href="https://discord.com" target="_blank">
+<button>💙 سيرفر الديسكورد</button>
+</a>
+
+</div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
